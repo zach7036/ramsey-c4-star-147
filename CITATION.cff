@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this research or its certificates, please cite this repository and the accompanying manuscript."
+title: "Exact determination of R(C4,K1,147)=160"
+type: software
+authors:
+  - family-names: "Waddle"
+    given-names: "Zach"
+version: "1.0.0-research-draft"
+date-released: "2026-08-07"
+abstract: >-
+  Reproducibility package for the exact determination R(C4,K1,147)=160,
+  including two 159-vertex lower-bound certificates, exact verification
+  scripts, and a spectral upper-bound certificate. This is an AI-assisted
+  research draft and has not been peer reviewed.
+keywords:
+  - Ramsey theory
+  - graph theory
+  - C4
+  - star Ramsey numbers
+  - polarity graphs
+  - spectral graph theory
+repository-code: "https://github.com/zach7036/ramsey-c4-star-147"
