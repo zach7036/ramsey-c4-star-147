@@ -1,0 +1,56 @@
+{
+  "package": {
+    "name": "Ramsey_C4_Star_147",
+    "version": "1.0.0-research-draft",
+    "created": "2026-08-07",
+    "author": "Zach Waddle",
+    "status": "Complete AI-assisted research draft; not peer reviewed",
+    "title": "Exact determination of a cycle-star Ramsey number beyond the published q=13 range",
+    "main_claim": "R(C4,K1,147)=160"
+  },
+  "frontier": {
+    "source_located_pre_study_interval": [159, 161],
+    "new_exact_value": 160,
+    "novelty_boundary": "No prior exact report was located in the searched surveys, papers, preprints, exact web queries, or repositories. This is evidence, not a logical guarantee, of novelty."
+  },
+  "lower_certificate": {
+    "ambient_graph": "ER(13), the orthogonal-polarity graph on PG(2,13)",
+    "ambient_order": 183,
+    "deleted_vertices": 24,
+    "retained_order": 159,
+    "edges": 993,
+    "degree_distribution": {"12": 81, "13": 78},
+    "minimum_degree": 12,
+    "maximum_common_neighbors": 1,
+    "complement_maximum_degree": 146,
+    "primary_deleted_indices": [7, 8, 11, 39, 46, 47, 50, 52, 59, 60, 63, 84, 98, 99, 101, 102, 117, 131, 133, 139, 143, 160, 169, 182],
+    "secondary_deleted_indices": [2, 6, 15, 19, 31, 32, 48, 62, 67, 82, 91, 116, 119, 125, 131, 133, 145, 147, 149, 150, 154, 162, 170, 173]
+  },
+  "upper_certificate": {
+    "hypothetical_order": 160,
+    "forced_degree": 13,
+    "forced_neighborhood_type": "6K2 union K1",
+    "leave_degree": 3,
+    "matrix_identity": "A^2=12I+J-D",
+    "spectral_support": "[-sqrt(15),-3] union [3,sqrt(15)]",
+    "free_trace_parameter": "0<=T=tr(AD^2)<=320",
+    "nonprincipal_moments": {
+      "s0": 159,
+      "s1": -13,
+      "s2": 1911,
+      "s3": -277,
+      "s4": 23439,
+      "s5": "T-4893"
+    },
+    "inertia_contradiction": "78<N_+<79"
+  },
+  "verification": {
+    "core_command": "bash run_all_checks.sh",
+    "expected_core_final_line": "ALL CORE CHECKS PASSED",
+    "search_replay_command": "bash replay_search.sh",
+    "expected_replay_final_line": "PASS: seed-555 discovery replay exactly reproduced the primary deletion list",
+    "proof_checks_require": "Python standard library",
+    "optional_cross_check": "SymPy",
+    "discovery_replay_requires": "C++17 compiler"
+  }
+}
